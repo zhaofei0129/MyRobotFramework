@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.1 (Python 3.7.2 on win32)" generated="20190420 14:20:27.099" rpa="false">
+<suite id="s1" name="MyRobotFramework" source="C:\Users\49470\PycharmProjects\MyRobotFramework\MyTest\MyTestSuite">
+<suite id="s1-s1" name="MyTestSuite1" source="C:\Users\49470\PycharmProjects\MyRobotFramework\MyTest\MyTestSuite\MyTestSuite1.robot">
+<kw name="rb my print" library="MyKeywords" type="setup">
+<arguments>
+<arg>my suite1 setup</arg>
+</arguments>
+<kw name="My Print" library="MyKeywords">
+<arguments>
+<arg>${content}</arg>
+</arguments>
+<msg timestamp="20190420 14:20:27.146" level="INFO">my suite1 setup</msg>
+<status status="PASS" starttime="20190420 14:20:27.146" endtime="20190420 14:20:27.146"></status>
+</kw>
+<status status="PASS" starttime="20190420 14:20:27.146" endtime="20190420 14:20:27.146"></status>
+</kw>
+<test id="s1-s1-t1" name="My Test Case 1">
+<kw name="rb my check data" library="MyKeywords">
+<arguments>
+<arg>sum</arg>
+<arg>4</arg>
+</arguments>
+<kw name="My Check Data" library="MyKeywords">
+<arguments>
+<arg>${data}</arg>
+<arg>${value}</arg>
+</arguments>
+<assign>
+<var>${result}</var>
+</assign>
+<msg timestamp="20190420 14:20:27.146" level="INFO">check_data sum: 4
+result is true</msg>
+<msg timestamp="20190420 14:20:27.146" level="INFO">${result} = True</msg>
+<status status="PASS" starttime="20190420 14:20:27.146" endtime="20190420 14:20:27.146"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>${result}</arg>
+</arguments>
+<status status="PASS" starttime="20190420 14:20:27.146" endtime="20190420 14:20:27.146"></status>
+</kw>
+<status status="PASS" starttime="20190420 14:20:27.146" endtime="20190420 14:20:27.146"></status>
+</kw>
+<tags>
+<tag>mytag</tag>
+</tags>
+<status status="PASS" starttime="20190420 14:20:27.146" endtime="20190420 14:20:27.146" critical="yes"></status>
+</test>
+<kw name="rb my print" library="MyKeywords" type="teardown">
+<arguments>
+<arg>my suite1 teardown</arg>
+</arguments>
+<kw name="My Print" library="MyKeywords">
+<arguments>
+<arg>${content}</arg>
+</arguments>
+<msg timestamp="20190420 14:20:27.146" level="INFO">my suite1 teardown</msg>
+<status status="PASS" starttime="20190420 14:20:27.146" endtime="20190420 14:20:27.146"></status>
+</kw>
+<status status="PASS" starttime="20190420 14:20:27.146" endtime="20190420 14:20:27.146"></status>
+</kw>
+<status status="PASS" starttime="20190420 14:20:27.130" endtime="20190420 14:20:27.146"></status>
+</suite>
+<suite id="s1-s2" name="MyTestSuite2" source="C:\Users\49470\PycharmProjects\MyRobotFramework\MyTest\MyTestSuite\MyTestSuite2.robot">
+<kw name="Run Keywords" library="BuiltIn" type="setup">
+<doc>Executes all the given keywords in a sequence.</doc>
+<arguments>
+<arg>rb my print</arg>
+<arg>my suite2 setup</arg>
+<arg>AND</arg>
+<arg>rb my print</arg>
+<arg>haha</arg>
+</arguments>
+<kw name="rb my print" library="MyKeywords">
+<arguments>
+<arg>my suite2 setup</arg>
+</arguments>
+<kw name="My Print" library="MyKeywords">
+<arguments>
+<arg>${content}</arg>
+</arguments>
+<msg timestamp="20190420 14:20:27.162" level="INFO">my suite2 setup</msg>
+<status status="PASS" starttime="20190420 14:20:27.162" endtime="20190420 14:20:27.162"></status>
+</kw>
+<status status="PASS" starttime="20190420 14:20:27.162" endtime="20190420 14:20:27.162"></status>
+</kw>
+<kw name="rb my print" library="MyKeywords">
+<arguments>
+<arg>haha</arg>
+</arguments>
+<kw name="My Print" library="MyKeywords">
+<arguments>
+<arg>${content}</arg>
+</arguments>
+<msg timestamp="20190420 14:20:27.162" level="INFO">haha</msg>
+<status status="PASS" starttime="20190420 14:20:27.162" endtime="20190420 14:20:27.162"></status>
+</kw>
+<status status="PASS" starttime="20190420 14:20:27.162" endtime="20190420 14:20:27.162"></status>
+</kw>
+<status status="PASS" starttime="20190420 14:20:27.162" endtime="20190420 14:20:27.162"></status>
+</kw>
+<test id="s1-s2-t1" name="My Test Case 1">
+<kw name="rb my check data" library="MyKeywords">
+<arguments>
+<arg>sum</arg>
+<arg>4</arg>
+</arguments>
+<kw name="My Check Data" library="MyKeywords">
+<arguments>
+<arg>${data}</arg>
+<arg>${value}</arg>
+</arguments>
+<assign>
+<var>${result}</var>
+</assign>
+<msg timestamp="20190420 14:20:27.162" level="INFO">check_data sum: 4
+result is true</msg>
+<msg timestamp="20190420 14:20:27.177" level="INFO">${result} = True</msg>
+<status status="PASS" starttime="20190420 14:20:27.162" endtime="20190420 14:20:27.177"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>${result}</arg>
+</arguments>
+<status status="PASS" starttime="20190420 14:20:27.177" endtime="20190420 14:20:27.177"></status>
+</kw>
+<status status="PASS" starttime="20190420 14:20:27.162" endtime="20190420 14:20:27.177"></status>
+</kw>
+<tags>
+<tag>mytag</tag>
+</tags>
+<status status="PASS" starttime="20190420 14:20:27.162" endtime="20190420 14:20:27.177" critical="yes"></status>
+</test>
+<test id="s1-s2-t2" name="My Test Case 2">
+<kw name="rb my print" library="MyKeywords">
+<arguments>
+<arg>my test case 2</arg>
+</arguments>
+<kw name="My Print" library="MyKeywords">
+<arguments>
+<arg>${content}</arg>
+</arguments>
+<msg timestamp="20190420 14:20:27.177" level="INFO">my test case 2</msg>
+<status status="PASS" starttime="20190420 14:20:27.177" endtime="20190420 14:20:27.177"></status>
+</kw>
+<status status="PASS" starttime="20190420 14:20:27.177" endtime="20190420 14:20:27.177"></status>
+</kw>
+<tags>
+<tag>mytag</tag>
+</tags>
+<status status="PASS" starttime="20190420 14:20:27.177" endtime="20190420 14:20:27.177" critical="yes"></status>
+</test>
+<kw name="rb my print" library="MyKeywords" type="teardown">
+<arguments>
+<arg>my suite2 teardown</arg>
+</arguments>
+<kw name="My Print" library="MyKeywords">
+<arguments>
+<arg>${content}</arg>
+</arguments>
+<msg timestamp="20190420 14:20:27.177" level="INFO">my suite2 teardown</msg>
+<status status="PASS" starttime="20190420 14:20:27.177" endtime="20190420 14:20:27.177"></status>
+</kw>
+<status status="PASS" starttime="20190420 14:20:27.177" endtime="20190420 14:20:27.177"></status>
+</kw>
+<status status="PASS" starttime="20190420 14:20:27.146" endtime="20190420 14:20:27.177"></status>
+</suite>
+<status status="PASS" starttime="20190420 14:20:27.099" endtime="20190420 14:20:27.177"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0">Critical Tests</stat>
+<stat pass="3" fail="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="3" fail="0">mytag</stat>
+</tag>
+<suite>
+<stat pass="3" fail="0" id="s1" name="MyRobotFramework">MyRobotFramework</stat>
+<stat pass="1" fail="0" id="s1-s1" name="MyTestSuite1">MyRobotFramework.MyTestSuite1</stat>
+<stat pass="2" fail="0" id="s1-s2" name="MyTestSuite2">MyRobotFramework.MyTestSuite2</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
